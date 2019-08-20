@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">		
+	</script>
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+	<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+		font-family: "montserrat", sans-serif;
+		box-sizing: border-box;
+	}
+
+	body {
+background: #334d50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #cbcaa5, #334d50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #cbcaa5, #334d50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+		min-height: 100vh;
+	}
+
+	.container {
+		max-width: 800px;
+		margin: auto;
+		padding: 10px;
+		border: 1px solid grey;
+	}
+	.txt {
+		width: 45%;
+		border: none;
+		border-bottom: 2px solid #000;
+		background: whitesmoke;
+		padding: 10px;
+		outline: none;
+		font-size: 18px;
+	}
+
+	.form-control {
+		width: 45%;
+		border: none;
+		border-top: 2px solid #000;
+		background: whitesmoke;
+		padding: 10px;
+		outline: none;
+		font-size: 18px;
+		float: right;
+	}
+
+	h3 {
+		margin: 10px 0;
+	}
+	.task {
+		width: 100%;
+		background: rgba(255, 255, 255, 0.5);
+		padding: 18px;
+		margin: 6px 0;
+		overflow: hidden;
+	}
+
+	.task i {
+		float: right;
+		margin-left: 20px;
+		cursor: pointer;
+	}
+
+	.campo .task {
+		background: white;
+		color: grey;
+	}
+
+	.container-topo {
+		padding: 30px;
+
+	}
+	.header {
+
+	}
+	</style>
+</head>
+<body>
+
+<div class="container">
+
+	<input type="text" class="txt" placeholder="Adicionar tarefa">
+	<input type="text" class="form-control" id="filter" placeholder="procurar tarefas...">
+
+
+	<div class="preCampo">
+		<h3>Não Completado</h3>
+
+	</div>
+	
+	<div class="campo">
+		<h3>Completado</h3>
+	</div>
+
+</div>
+</div>
+
+<script type="text/javascript" src="todo.js"></script>
+</body>
+</html>
